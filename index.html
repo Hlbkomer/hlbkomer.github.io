@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Timestamps and Summaries for YouTube</title>
+    <meta
+      name="description"
+      content="Video Timestamps and Summaries for YouTube is a Safari extension and macOS companion app that generates timestamps and summaries for YouTube videos."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <a class="brand" href="/">Video Timestamps and Summaries for YouTube</a>
+        <nav class="nav" aria-label="Site">
+          <a href="/">Home</a>
+          <a href="/privacy.html">Privacy Policy</a>
+          <a href="/terms.html">Terms of Service</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <span class="eyebrow">Safari extension + macOS companion app</span>
+        <h1>Generate timestamps and summaries for YouTube videos.</h1>
+        <p class="lead">
+          Video Timestamps and Summaries for YouTube helps users create chronological
+          timestamps and short summaries directly from supported YouTube video pages.
+        </p>
+      </section>
+
+      <section class="grid" aria-label="Overview">
+        <article class="card">
+          <h2>What it does</h2>
+          <p>
+            The Safari extension adds a right-side sidebar on supported YouTube video pages.
+            The macOS companion app handles Google sign-in and shares that signed-in state
+            with the extension.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>How it works</h2>
+          <ul>
+            <li>The user signs in with Google in the macOS companion app.</li>
+            <li>The extension reads the current YouTube video URL.</li>
+            <li>The app sends the video URL and selected prompt to Gemini.</li>
+            <li>Gemini returns text that the extension displays as timestamps or a summary.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h2>Google authorization</h2>
+          <p>
+            Google authorization is used only so the signed-in user can call Gemini on that
+            user's behalf. The app is not designed to access Gmail, Drive, Calendar, Contacts,
+            or other personal Google account content.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Support</h2>
+          <p>
+            Project repository:
+            <a href="https://github.com/Hlbkomer/YouTube-Timestamps-and-Summaries">GitHub</a>
+          </p>
+          <p>
+            Issue tracker:
+            <a href="https://github.com/Hlbkomer/YouTube-Timestamps-and-Summaries/issues">Open an issue</a>
+          </p>
+        </article>
+      </section>
+
+      <p class="footer">
+        Read the <a href="/privacy.html">Privacy Policy</a> and
+        <a href="/terms.html">Terms of Service</a>.
+      </p>
+    </main>
+  </body>
+</html>
