@@ -35,27 +35,31 @@
           <h2>What it does</h2>
           <p>
             The Safari extension adds a right-side sidebar on supported YouTube video pages.
-            The macOS companion app handles Google sign-in and shares that signed-in state
-            with the extension.
+            It reads the available YouTube transcript, uses the user's signed-in ChatGPT
+            account for timestamps, and creates summaries with either ChatGPT or Apple
+            Intelligence on the Mac.
           </p>
         </article>
 
         <article class="card">
           <h2>How it works</h2>
           <ul>
-            <li>The user signs in with Google in the macOS companion app.</li>
-            <li>The extension reads the current YouTube video URL.</li>
-            <li>The app sends the video URL and selected prompt to Gemini.</li>
-            <li>Gemini returns text that the extension displays as timestamps or a summary.</li>
+            <li>The extension detects a supported YouTube watch or live page.</li>
+            <li>The extension fetches the available YouTube transcript.</li>
+            <li>The selected ChatGPT model creates timestamp candidates from the transcript.</li>
+            <li>The selected ChatGPT model or Apple Intelligence creates the summary.</li>
+            <li>The extension validates timestamp candidates against real transcript cue times.</li>
+            <li>The extension displays both timestamps and the summary in the sidebar.</li>
           </ul>
         </article>
 
         <article class="card">
-          <h2>Google authorization</h2>
+          <h2>Requirements</h2>
           <p>
-            Google authorization is used only so the signed-in user can call Gemini on that
-            user's behalf. The app is not designed to access Gmail, Drive, Calendar, Contacts,
-            or other personal Google account content.
+            The app requires Safari on macOS 26 or later, ChatGPT sign-in, and a YouTube
+            video with captions or an available transcript. Apple Intelligence is optional
+            for local summary generation on compatible Macs. No API key or developer-operated
+            backend is required.
           </p>
         </article>
 

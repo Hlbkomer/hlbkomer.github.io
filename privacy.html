@@ -24,11 +24,10 @@
       <article class="card content">
         <section>
           <h1>Privacy Policy</h1>
-          <p>Last updated: April 23, 2026</p>
+          <p>Last updated: April 26, 2026</p>
           <p>
             This Privacy Policy explains how Video Timestamps and Summaries for YouTube
-            handles data when a user signs in with Google and uses the app's Gemini-powered
-            features.
+            handles data when generating timestamps and summaries.
           </p>
         </section>
 
@@ -39,8 +38,9 @@
             companion app that generates timestamps and summaries for YouTube videos.
           </p>
           <p>
-            The app uses Google OAuth so the signed-in user can call Google's Gemini service
-            from the app.
+            The app uses the user's signed-in ChatGPT account for timestamp generation.
+            Summaries can be generated either with ChatGPT or with Apple Intelligence on
+            the user's Mac. It does not require API keys or a developer-operated backend.
           </p>
         </section>
 
@@ -48,18 +48,17 @@
           <h2>Information processed by the app</h2>
           <ul>
             <li>the current YouTube video URL</li>
-            <li>the selected prompt text used to request timestamps or summaries</li>
-            <li>Google OAuth access and refresh tokens needed to call Gemini</li>
-            <li>local settings such as selected Gemini model and saved prompts</li>
+            <li>the available transcript or captions for the current YouTube video</li>
+            <li>ChatGPT sign-in tokens after the user signs in</li>
+            <li>local app settings</li>
           </ul>
         </section>
 
         <section>
           <h2>How information is used</h2>
           <ul>
-            <li>authenticate the user with Google</li>
-            <li>send Gemini requests requested by the user</li>
             <li>return timestamps or summaries inside the Safari extension</li>
+            <li>keep the user's ChatGPT sign-in active for generation</li>
             <li>remember local app preferences</li>
           </ul>
         </section>
@@ -67,41 +66,32 @@
         <section>
           <h2>Local storage</h2>
           <p>The app stores its settings locally on the user's Mac.</p>
-          <p>OAuth tokens are stored locally in the macOS Keychain.</p>
-          <p>Prompt settings and related app preferences are stored locally on the user's Mac.</p>
-        </section>
-
-        <section>
-          <h2>Data shared with Google</h2>
           <p>
-            When a user requests timestamps or a summary, the app sends the YouTube video URL
-            and the selected prompt to Google's Gemini service.
-          </p>
-          <p>
-            Google OAuth is used only so the user can authorize the app to make those Gemini
-            requests on the user's behalf.
-          </p>
-          <p>
-            The app is not intended to access Gmail, Drive, Calendar, Contacts, or similar
-            Google account data.
+            ChatGPT sign-in tokens are stored locally in the shared app group container.
+            Users can remove them by signing out in the companion app or removing the
+            app's local data.
           </p>
         </section>
 
         <section>
           <h2>No separate developer backend</h2>
           <p>
-            The app does not use a separate developer-operated backend server for Gemini
+            The app does not use a separate developer-operated backend server for generation
             requests.
           </p>
-          <p>Gemini requests are sent from the user's local app directly to Google.</p>
         </section>
 
         <section>
           <h2>Data sharing</h2>
           <p>The app does not sell personal data.</p>
           <p>
-            The app does not intentionally share user data with third parties other than
-            Google services required for authentication and Gemini generation.
+            The app does not intentionally share user data with a developer-operated server.
+          </p>
+          <p>
+            For timestamp generation, transcript text is sent through the user's signed-in
+            ChatGPT account. For summary generation, transcript text is sent to ChatGPT or
+            processed locally with Apple Intelligence on the user's Mac, depending on the
+            user's app setting.
           </p>
         </section>
 
@@ -110,30 +100,25 @@
           <p>
             Local settings remain on the user's Mac until the user changes or removes them.
           </p>
-          <p>
-            OAuth tokens remain stored locally until the user signs out, revokes access, or
-            the token becomes invalid.
-          </p>
         </section>
 
         <section>
           <h2>Security</h2>
           <p>
-            The app uses local system storage and the macOS Keychain to protect saved OAuth
+            The app uses local system storage for saved app settings and ChatGPT sign-in
             tokens.
           </p>
           <p>
             No method of storage or transmission is completely secure, but reasonable steps
-            are taken to keep tokens and local settings protected on the user's device.
+            are taken to keep local settings protected on the user's device.
           </p>
         </section>
 
         <section>
           <h2>User choices</h2>
           <ul>
-            <li>sign out of the app</li>
-            <li>revoke Google access from their Google account</li>
             <li>remove the app and its locally stored settings</li>
+            <li>sign out in the companion app to clear ChatGPT sign-in tokens</li>
           </ul>
         </section>
 
