@@ -124,6 +124,7 @@ li {
 
 .action-grid {
   grid-template-columns: 2fr 1fr;
+  align-items: start;
   margin-top: 16px;
 }
 
