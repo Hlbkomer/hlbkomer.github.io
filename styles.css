@@ -123,9 +123,13 @@ li {
 }
 
 .action-grid {
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: start;
   margin-top: 16px;
+}
+
+.action-download-card {
+  grid-column: span 2;
 }
 
 .card {
@@ -182,5 +186,9 @@ li {
 
   .action-grid {
     grid-template-columns: 1fr;
+  }
+
+  .action-download-card {
+    grid-column: auto;
   }
 }
