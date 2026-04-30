@@ -116,10 +116,15 @@ li {
 }
 
 .hero-lead {
-  display: flex;
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
   align-items: center;
   gap: 18px;
   max-width: 760px;
+}
+
+.hero-lead .lead {
+  margin: 0;
 }
 
 .hero-icon {
@@ -139,11 +144,16 @@ li {
 
 .action-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
   margin-top: 16px;
 }
 
 .action-download-card {
   grid-column: span 2;
+}
+
+.action-grid > .card {
+  height: 100%;
 }
 
 .card {
@@ -199,7 +209,8 @@ li {
   }
 
   .hero-lead {
-    align-items: flex-start;
+    grid-template-columns: 56px minmax(0, 1fr);
+    align-items: center;
   }
 
   .hero-icon {
