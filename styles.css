@@ -115,6 +115,21 @@ li {
   font-size: 19px;
 }
 
+.hero-lead {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  max-width: 760px;
+}
+
+.hero-icon {
+  width: 72px;
+  height: 72px;
+  flex: 0 0 auto;
+  border-radius: 16px;
+  box-shadow: 0 12px 28px rgba(27, 26, 23, 0.12);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -124,7 +139,6 @@ li {
 
 .action-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: start;
   margin-top: 16px;
 }
 
@@ -182,6 +196,16 @@ li {
   p,
   li {
     font-size: 16px;
+  }
+
+  .hero-lead {
+    align-items: flex-start;
+  }
+
+  .hero-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
   }
 
   .action-grid {
