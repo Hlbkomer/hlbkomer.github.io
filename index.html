@@ -38,9 +38,9 @@
           <h2>What it does</h2>
           <p>
             The Safari extension adds a right-side sidebar on supported YouTube video pages.
-            It reads the available YouTube transcript, uses the user's signed-in ChatGPT
-            account for timestamps, and creates summaries with either ChatGPT or Apple
-            Intelligence on the Mac.
+            It reads the available YouTube transcript, creates summaries with Apple
+            Intelligence on the Mac or the user's selected signed-in ChatGPT model, and
+            creates timestamps when ChatGPT is connected.
           </p>
         </article>
 
@@ -49,20 +49,21 @@
           <ul>
             <li>The extension detects a supported YouTube watch or live page.</li>
             <li>The extension fetches the available YouTube transcript.</li>
-            <li>The selected ChatGPT model creates timestamp candidates from the transcript.</li>
-            <li>The selected ChatGPT model or Apple Intelligence creates the summary.</li>
+            <li>Apple Intelligence can create summaries locally without ChatGPT sign-in.</li>
+            <li>If ChatGPT is connected, the selected ChatGPT model creates timestamp candidates from the transcript.</li>
+            <li>The selected ChatGPT model or Apple Intelligence creates the summary, depending on the user's setting.</li>
             <li>The extension validates timestamp candidates against real transcript cue times.</li>
-            <li>The extension displays both timestamps and the summary in the sidebar.</li>
+            <li>The extension displays the generated results in the sidebar.</li>
           </ul>
         </article>
 
         <article class="card">
           <h2>Requirements</h2>
           <p>
-            The app requires Safari on macOS 26 or later, ChatGPT sign-in, and a YouTube
-            video with captions or an available transcript. Apple Intelligence is optional
-            for local summary generation on compatible Macs. No API key or developer-operated
-            backend is required.
+            The app requires Safari on macOS 26 or later and a YouTube video with captions
+            or an available transcript. ChatGPT sign-in is only required for timestamps and
+            optional GPT summaries. Apple Intelligence is optional for local summary
+            generation on compatible Macs. No API key or developer-operated backend is required.
           </p>
         </article>
       </section>
@@ -74,7 +75,7 @@
             Download the signed and notarized macOS app.
           </p>
           <p>
-            <a href="https://github.com/Hlbkomer/YouTube-Timestamps-and-Summaries/releases/download/v1.0.2/Timestamps-and-Summaries-for-YT-v1.0.2.zip">Download Timestamps &amp; Summaries for YT v1.0.2</a>
+            <a href="https://github.com/Hlbkomer/YouTube-Timestamps-and-Summaries/releases/latest/download/Timestamps-and-Summaries-for-YT.zip">Download Timestamps &amp; Summaries for YT</a>
           </p>
           <p>
             After unzipping, move the app to Applications, open it and enable
